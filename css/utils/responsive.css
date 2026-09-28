@@ -5,7 +5,7 @@
     }
 
     /* Hambuger Menu */
-    .hamburger {
+     .hamburger {
         display: flex;
         flex-direction: column;
         gap: 5px;
@@ -13,40 +13,43 @@
         border: none;
         cursor: pointer;
         z-index: 1001;
+        padding: 5px;
     }
 
     .hamburger span {
-        width: 25px;
+        width: 26px;
         height: 2px;
         background-color: var(--color-text-primary);
         transition: var(--transition-smooth);
     }
 
-    /* Header Menu */
-    .main-header {
-        padding: 15px 0;
-    }
-
+    /* Mobile Slide-out Drawer */
     .main-nav {
         position: fixed;
         top: 0;
-        right: -100%;
-        width: 70%;
+        right: -100%; /* Hidden off-screen */
+        width: 75%;
         height: 100vh;
         background: rgba(16, 24, 40, 0.95);
-        backdrop-filter: blur(15px);
+        backdrop-filter: blur(20px);
         padding: 100px 30px;
-        transition: 0.4s ease;
+        transition: 0.35s ease-in-out;
         border-left: 1px solid rgba(16, 185, 129, 0.2);
     }
 
     .main-nav.active {
-        right: 0;
+        right: 0; /* Slide in! */
     }
 
     .main-nav ul {
         flex-direction: column;
-        gap: 25px;
+        gap: 20px;
+    }
+
+    .nav-item a {
+        font-size: 1.15rem;
+        display: block;
+        width: 100%;
     }
 
     /* Home Section */
@@ -99,7 +102,7 @@
     
     .info-card {
         padding: 20px 15px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
 
     .info-card h3 {
@@ -110,7 +113,6 @@
         font-size: 0.9rem;
     }
 
-    
     .bio-lead {
         font-size: 1.15rem;
     }

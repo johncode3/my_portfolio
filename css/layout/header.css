@@ -45,6 +45,11 @@
     color: var(--color-primary);
 }
 
+.nav-item.active a,
+.nav-item a:hover {
+    color: var(--color-primary);
+}
+
 /* Hamburger Menu */
 .hamburger {
   display: none;
@@ -76,35 +81,3 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-@media (max-width: 768px) {
-  .main-header .container {
-    position: relative;
-  }
-
-  .hamburger {
-    display: flex;
-    margin-left: auto;
-  }
-
-  .main-nav {
-    display: none;
-    background: rgba(16, 24, 40, 0.95);
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(16, 185, 129, 0.5);
-  }
-
-  .main-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .main-nav.active {
-    display: block;
-  }
-}

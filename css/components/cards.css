@@ -18,6 +18,7 @@
 
 .info-card h3 {
     font-size: 1.3rem;
+    color: var(--color-text-primary);
     margin-bottom: 5px;
 }
 
@@ -30,6 +31,28 @@
     transform: translateY(-5px);
     border-color: var(--color-primary);
     box-shadow: 0 0 10px 2px var(--color-primary);
+}
+/* about section  card */
+.about-bio-card {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-card);
+    padding: 40px 45px;
+    border-left: 4px solid var(--color-primary);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+}
+
+.about-bio-card p {
+    font-size: 1.1rem;
+    color: var(--color-text-secondary);
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+    text-indent: 2rem;
+}
+
+.about-bio-card p:last-child {
+    margin-bottom: 0;
 }
 
 /* portfolio card of portfolio section */
@@ -49,13 +72,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
-}
-
-.portfolio-card .category-tag {
-    width: fit-content;
-    padding: 0px 6px;
-    font-size: 0.5rem;
-    border-radius: var(--radius-card);
 }
 
 .portfolio-card .work-title h3 {

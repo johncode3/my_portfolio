@@ -1,3 +1,18 @@
+/* Global Styles for Sections */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--color-text-primary);
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.section-description {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--color-text-secondary);
+}
 /* Styles for home sections */
 .home-section {
     min-height: 100vh;
@@ -6,18 +21,6 @@
     justify-content: center;
     padding-top: 80px;
     text-align: left;
-}
-
-.section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    padding-bottom: 20px;
-}
-
-.section-description {
-    text-align: center;
-    margin-bottom: 20px;
-    color: var(--color-text-secondary);
 }
 
 /* Hero-Top Section */
@@ -151,43 +154,8 @@
 }
 
 /* About Section Layout */
-.section-title {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--color-text-primary);
-    margin-bottom: 30px;
-    text-align: center;
-}
-
-.about-bio-card {
-    background: var(--color-bg-card);
-    border-radius: var(--radius-card);
-    padding: 40px 45px;
-    border-left: 4px solid var(--color-primary);
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    border-right: 1px solid rgba(255, 255, 255, 0.05);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    
-}
-
 .bio-lead {
     font-weight: 700;
-    color: var(--color-text-primary);
-    line-height: 1.5;
-    margin-bottom: 1.25rem;
-    text-indent: 0;
-}
-
-.about-bio-card p {
-    font-size: 1.1rem;
-    color: var(--color-text-secondary);
-    line-height: 1.8;
-    margin-bottom: 1.2rem;
-    text-indent: 2rem;
-}
-
-.about-bio-card p:last-child {
-    margin-bottom: 0;
 }
 
 .text-emerald {
@@ -217,70 +185,12 @@
     margin-top: 40px;
 }
 
-.info-card {
-    background: var(--color-bg-card);
-    padding: 25px 20px;
-    border-radius: var(--radius-card);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    text-align: center;
-    transition: var(--transition-smooth);
-}
-
-.info-card i {
-    font-size: 2rem;
-    color: var(--color-primary);
-    margin-bottom: 15px;
-}
-
-.info-card h3 {
-    font-size: 1.15rem;
-    color: var(--color-text-primary);
-    margin-bottom: 6px;
-    font-weight: 700;
-}
-
-.info-card p {
-    font-size: 0.9rem;
-    color: var(--color-text-secondary);
-}
-
-.info-card:hover {
-    transform: translateY(-5px);
-    border-color: var(--color-primary);
-    box-shadow: 0 0 10px 2px var(--color-primary);
-}
-
 /* My work section */
 .portfolio-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.filter-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-}
-
-.filter-buttons .btn-filter {
-    background-color: var(--color-bg-card);
-    color: var(--color-text-secondary);
-    border: 1px solid var(--color-primary);
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: var(--transition-smooth);
-}
-
-.filter-buttons .btn-filter:hover {
-    box-shadow: 0 0 10px 2px var(--color-primary);
-}
-
-.filter-buttons .btn-filter.active {
-    background-color: var(--color-primary);
-    color: var(--color-text-primary);
-    box-shadow: 0 0 10px 2px var(--color-primary);
 }
 
 .portfolio-grid {

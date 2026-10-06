@@ -14,7 +14,6 @@ button,.btn-viewMyWorks,.btn-getInTouch {
 
 .btn-viewMyWorks {
     background-color: var(--color-primary);
-    color: #ffffff;
 }
 
 .btn-getInTouch {
@@ -33,4 +32,29 @@ button,.btn-viewMyWorks,.btn-getInTouch {
 button:active,
 .btn-viewMyWorks:active,.btn-getInTouch:active {
     transform: translateY(0px) scale(0.98);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.filter-buttons .btn-filter {
+    background-color: var(--color-bg-card);
+    color: var(--color-text-secondary);
+    border: 1px solid var(--color-primary);
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.filter-buttons .btn-filter:hover {
+    box-shadow: 0 0 10px 2px var(--color-primary);
+}
+
+.filter-buttons .btn-filter.active {
+    background-color: var(--color-primary);
+    color: var(--color-text-primary);
+    box-shadow: 0 0 10px 2px var(--color-primary);
 }

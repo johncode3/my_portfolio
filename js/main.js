@@ -64,3 +64,31 @@ menuItems.forEach((item)=> {
         this.classList.add('active');
     });
 });
+
+// My Work filter 
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.btn-filter');
+    const cards = document.querySelectorAll('.portfolio-card');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+        // 1. Remove 'active' class from all buttons and add to the clicked one
+        buttons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        // 2. Get the filter value from the clicked button
+        const filterValue = button.getAttribute('data-filter');
+
+        // 3. Filter the cards
+        cards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+
+            if (filterValue === 'all' || filterValue === cardCategory) {
+            card.classList.remove('hide');
+            } else {
+            card.classList.add('hide');
+            }
+            });
+        });
+    });
+})

@@ -130,9 +130,25 @@
 }
 
 .btn-link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
     margin-top: auto;
     color: var(--color-primary);
     font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+}
+
+.btn-link i {
+    margin-left: 5px;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+    box-shadow: none;
+    background-color: transparent;
 }
 
 .btn-link.disabled {

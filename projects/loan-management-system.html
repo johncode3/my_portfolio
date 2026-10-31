@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sovann Kakkada | Loan Management System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/pages/case-study.css">
+    <link rel="icon" type="image/png" href="assets/images/3d-man.png">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="case-study-nav">
+        <div class="container">
+            <a class="logo" href="../index.html">John Code3</a>
+            <a class="btn-getInTouch all-projects-link" href="../index.html#portfolio">
+                <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                <span>All Projects</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="case-study-main">
+        <div class="case-study-container">
+            <section class="case-study-hero" aria-labelledby="case-study-title">
+                <div class="case-study-hero-content">
+                    <span class="eyebrow">Case Study</span>
+                    <h1 class="section-title" id="case-study-title">Loan Management System</h1>
+                    <p class="section-description case-study-subtitle">Role-Based Loan Operations with Automated Amortization &amp; Repayment Tracking</p>
+                    <div class="tech-stack" aria-label="Technology stack">
+                        <span class="tech-badge">Laravel</span>
+                        <span class="tech-badge">Blade</span>
+                        <span class="tech-badge">MySQL</span>
+                        <span class="tech-badge">Vite</span>
+                        <span class="tech-badge">Tailwind CSS</span>
+                    </div>
+                    <a class="btn-viewMyWorks github-link" href="https://github.com/johncode3/cash_loan_management" target="_blank" rel="noopener noreferrer">
+                        View on GitHub
+                    </a>
+                </div>
+                <figure class="case-study-preview">
+                    <img src="../assets/images/loan-management/dashboard.PNG" alt="Loan Management System dashboard">
+                    <figcaption>Dashboard View</figcaption>
+                </figure>
+            </section>
+
+            <section class="case-study-section" aria-labelledby="overview-title">
+                <h2 class="section-title" id="overview-title">Overview</h2>
+                <div class="overview about-bio-card">
+                    <p>Cash loan teams need a reliable way to manage customers, staff, applications, approvals, disbursements, and repayments in one place. Manual tracking can make it difficult to follow each loan&apos;s status, maintain accurate customer records, and identify installments that need attention.</p>
+                    <p>This Laravel application centralizes the complete loan lifecycle. Customers and staff can submit applications, authorized users can approve and disburse loans, and the system generates reducing-balance repayment schedules while dashboards track collections and overdue accounts.</p>
+                </div>
+            </section>
+
+            <section class="case-study-section" aria-labelledby="features-title">
+                <h2 class="section-title" id="features-title">Key Features</h2>
+                <div class="features-grid">
+                    <article class="portfolio-card">
+                        <img src="../assets/images/loan-management/login.png" alt="Loan Management System login screen">
+                        <div class="card-content">
+                            <div class="work-title">
+                                <h3>Role-Based Authentication</h3>
+                            </div>
+                            <ul>
+                                <li>Supports admin, loan officer, cashier, and customer roles.</li>
+                                <li>Middleware controls access to approvals, disbursements, and repayments.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <img src="../assets/images/loan-management/loan-application.png" alt="Loan application form">
+                        <div class="card-content">
+                            <div class="work-title">
+                                <h3>Loan Application &amp; Verification Flow</h3>
+                            </div>
+                            <ul>
+                                <li>Customers and staff can submit applications for active customers.</li>
+                                <li>Track the workflow from Pending to Approved to Disbursed.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <img src="../assets/images/loan-management/repayment-schedule.png" alt="Automated repayment schedule">
+                        <div class="card-content">
+                            <div class="work-title">
+                                <h3>Automated Repayment Schedule &amp; Interest Calculator</h3>
+                            </div>
+                            <ul>
+                                <li>Generate reducing-balance schedules using principal, rate, and term.</li>
+                                <li>Adjust the final installment after rounding and show schedule totals.</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-card">
+                        <img src="../assets/images/loan-management/overdue-dashboard.png" alt="Overdue tracking dashboard">
+                        <div class="card-content">
+                            <div class="work-title">
+                                <h3>Overdue Tracking &amp; Dashboard Analytics</h3>
+                            </div>
+                            <ul>
+                                <li>Record cash or selected payment methods against unpaid schedules.</li>
+                                <li>Monitor overdue amounts, collections, applications, and customer totals.</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="case-study-footer">
+        <p>Interested in this project?</p>
+        <a class="btn-getInTouch" href="mailto:sovannkakkada@gmail.com">
+            Get in Touch
+        </a>
+        <p>&copy; 2026 Sovann Kakkada.
+        <br>All right reserved.</p>
+    </footer>
+</body>
+</html>
